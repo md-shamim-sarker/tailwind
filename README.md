@@ -78,7 +78,7 @@ npx tailwindcss init
 - Modify tailwind.config.js file like this
 ```bash
 module.exports = {
-  content: ["*.html"],
+  content: ["*.*.html"],
   theme: {
     extend: {},
   },
@@ -91,3 +91,17 @@ npm run build
 ```
 - Must be Rebuilding... are seen on Terminal and the Tailwindcss environment is ready to development
 
+# Tailwindcss aspect-ratio plugin installation
+```bash
+npm install @tailwindcss/aspect-ratio
+```
+## Modify tailwind.config.js file like this
+```bash
+module.exports = {
+  content: ["*/*.html"],
+  theme: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/aspect-ratio')],
+}
+```
