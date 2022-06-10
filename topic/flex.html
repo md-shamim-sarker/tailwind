@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Flex</title>
+</head>
+
+<body class="container m-auto mt-8">
+    <div class="flex">
+        <div class="flex-1 w-64 h-14 bg-blue-200">flex-1</div>
+        <div class="flex-initial w-64 bg-blue-300">flex-initial</div>
+        <div class="flex-auto w-64 bg-blue-400">flex-auto</div>
+        <div class="flex-none w-64 bg-blue-500">flex-none</div>
+    </div><br>
+
+    <div class="flex">
+        <div class="grow w-64 h-14 bg-blue-600">grow</div>
+        <div class="grow-0 w-64 bg-blue-700">grow-0</div>
+    </div><br>
+
+    <div class="flex">
+        <div class="shrink w-96 h-14 bg-blue-800">shrink</div>
+        <div class="shrink-0 w-96 bg-blue-900">grow-0</div>
+    </div><br>
+
+    <div class="flex flex-wrap">
+        <div class="w-96 h-14 bg-red-200">flex-wrap (1)</div>
+        <div class="w-96 h-14 bg-red-300">flex-wrap (2)</div>
+        <div class="w-96 h-14 bg-red-400">flex-wrap (3)</div>
+    </div><br>
+
+    <div class="flex flex-wrap-reverse">
+        <div class="w-96 h-14 bg-red-500">flex-wrap-reverse (1)</div>
+        <div class="w-96 h-14 bg-red-600">flex-wrap-reverse (2)</div>
+        <div class="w-96 h-14 bg-red-700">flex-wrap-reverse (3)</div>
+    </div><br>
+
+    <div class="flex flex-nowrap">
+        <div class="w-96 h-14 bg-red-800">flex-nowrap (1)</div>
+        <div class="w-96 h-14 bg-red-900">flex-nowrap (2)</div>
+        <div class="w-96 h-14 bg-red-200">flex-nowrap (3)</div>
+    </div><br>
+
+    <div class="flex flex-row">
+        <div class="w-96 h-14 bg-slate-200">flex-row (1)</div>
+        <div class="w-96 h-14 bg-slate-300">flex-row (2)</div>
+        <div class="w-96 h-14 bg-slate-400">flex-row (3)</div>
+    </div><br>
+
+    <div class="flex flex-row-reverse">
+        <div class="w-96 h-14 bg-slate-500">flex-row-reverse (1)</div>
+        <div class="w-96 h-14 bg-slate-600">flex-row-reverse (2)</div>
+        <div class="w-96 h-14 bg-slate-700">flex-row-reverse (3)</div>
+    </div><br>
+
+    <div class="flex flex-col">
+        <div class="w-96 h-14 bg-slate-200">flex-col (1)</div>
+        <div class="w-96 h-14 bg-slate-300">flex-col (2)</div>
+        <div class="w-96 h-14 bg-slate-400">flex-col (3)</div>
+    </div><br>
+
+    <div class="flex flex-col-reverse">
+        <div class="w-96 h-14 bg-slate-500">flex-col-reverse (1)</div>
+        <div class="w-96 h-14 bg-slate-600">flex-col-reverse (2)</div>
+        <div class="w-96 h-14 bg-slate-700">flex-col-reverse (3)</div>
+    </div><br>
+
+    <div class="flex">
+        <div class="basis-1/2 h-14 bg-pink-200">basis-1/2</div>
+        <div class="basis-60 bg-pink-300">basis-60</div>
+        <div class="basis-auto bg-pink-400">basis-auto</div>
+        <div class="basis-full bg-pink-500">basis-full</div>
+    </div><br>
+</body>
+
+</html>
+
+<!-- 
+    Use flex-initial to allow a flex item to shrink but not grow, taking into account its initial size:
+    Use flex-1 to allow a flex item to grow and shrink as needed, ignoring its initial size:
+    Use flex-auto to allow a flex item to grow and shrink, taking into account its initial size:
+    Use flex-none to prevent a flex item from growing or shrinking:
+    
+    Use grow to allow a flex item to grow to fill any available space:
+    Use grow-0 to prevent a flex item from growing:
+
+ -->
