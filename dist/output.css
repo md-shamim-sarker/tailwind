@@ -522,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-aspect-h: 9;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .static {
   position: static;
 }
@@ -766,6 +770,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-screen {
@@ -1684,6 +1692,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(219 234 254 / var(--tw-text-opacity));
 }
 
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1727,6 +1740,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.hover\:visible:hover {
+  visibility: visible;
+}
+
+.hover\:invisible:hover {
+  visibility: hidden;
+}
+
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:hidden:hover {
+  display: none;
 }
 
 .hover\:scale-105:hover {
