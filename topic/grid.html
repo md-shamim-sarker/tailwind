@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,29 @@
     <link rel="stylesheet" href="../dist/output.css">
     <title>Grid</title>
 </head>
+
 <body>
-    
+    <h2 class="text-3xl font-bold text-center p-3">col-span-{}</h2>
+    <div class="grid grid-cols-3 gap-3 m-4">
+        <div class="box col-span-2">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+        <div class="box col-span-2">04</div>
+        <div class="box col-span-2">05</div>
+        <div class="box">06</div>
+
+    </div>
+    <hr>
+
+    <h2 class="text-3xl font-bold text-center p-3">col-start-{}</h2>
+    <div class="grid grid-cols-6 gap-3 m-4">
+        <div class="box col-span-4 col-start-2">01</div>
+        <div class="box col-start-1 col-end-3">02</div>
+        <div class="box col-start-5 col-end-7">03</div>
+        <div class="box col-span-full">04</div>
+        <div class="box col-start-3 col-5">05</div>
+    </div>
+
 </body>
+
 </html>
