@@ -12,47 +12,72 @@
 <body>
     <h2 class="p-3 text-center text-3xl font-bold">col-span-{n}</h2>
 <div class="m-4 grid grid-cols-3 gap-3">
-  <div class="box col-span-2">01</div>
-  <div class="box">02</div>
-  <div class="box">03</div>
-  <div class="box col-span-2">04</div>
-  <div class="box col-span-2">05</div>
-  <div class="box">06</div>
+  <div class="blue-box col-span-2">01</div>
+  <div class="blue-box">02</div>
+  <div class="blue-box">03</div>
+  <div class="blue-box col-span-2">04</div>
+  <div class="blue-box col-span-2">05</div>
+  <div class="blue-box">06</div>
 </div>
 <hr />
 
 <h2 class="p-3 text-center text-3xl font-bold">col-start-{n}</h2>
 <div class="m-4 grid grid-cols-6 gap-3">
-  <div class="box col-span-4 col-start-2">01</div>
-  <div class="box col-start-1 col-end-3">02</div>
-  <div class="box col-start-5 col-end-7">03</div>
-  <div class="box col-span-full">04</div>
-  <div class="box col-start-3 col-end-5">05</div>
+  <div class="blue-box col-span-4 col-start-2">01</div>
+  <div class="blue-box col-start-1 col-end-3">02</div>
+  <div class="blue-box col-start-5 col-end-7">03</div>
+  <div class="blue-box col-span-full">04</div>
+  <div class="blue-box col-start-3 col-end-5">05</div>
 </div>
 
 <h2 class="p-3 text-center text-3xl font-bold">grid-rows-{n}</h2>
 <div class="m-4 grid grid-rows-3 grid-flow-col gap-3">
-  <div class="box">01</div>
-  <div class="box row-span-2">02</div>
-  <div class="box row-span-3">03</div>
-  <div class="box row-span-full">04</div>
-  <div class="box">05</div>
-  <div class="box">06</div>
-  <div class="box">07</div>
+  <div class="blue-box">01</div>
+  <div class="blue-box row-span-2">02</div>
+  <div class="blue-box row-span-3">03</div>
+  <div class="blue-box row-span-full">04</div>
+  <div class="blue-box">05</div>
+  <div class="blue-box">06</div>
+  <div class="blue-box">07</div>
 </div> <hr>
 
 <h2 class="p-3 text-center text-3xl font-bold">Grid Layout</h2>
 <div class="m-2 grid md:grid-cols-4 gap-1 md:grid-rows-6">
-  <div class="box md:col-span-full md:row-span-3">01</div>
-  <div class="box md:col-span-full">02</div>
-  <div class="box md:row-span-2">03</div>
-  <div class="box md:col-span-2 md:row-span-4">05</div>
-  <div class="box">06</div>
-  <div class="box">07</div>
-  <div class="box md:row-span-2">04</div>
-  <div class="box">08</div>
-  <div class="box">09</div>
-  <div class="box md:col-span-full h-24">10</div>
+  <div class="blue-box md:col-span-full md:row-span-3">01</div>
+  <div class="blue-box md:col-span-full">02</div>
+  <div class="blue-box md:row-span-2">03</div>
+  <div class="blue-box md:col-span-2 md:row-span-4">05</div>
+  <div class="blue-box">06</div>
+  <div class="blue-box">07</div>
+  <div class="blue-box md:row-span-2">04</div>
+  <div class="blue-box">08</div>
+  <div class="blue-box">09</div>
+  <div class="blue-box md:col-span-full h-24">10</div>
+</div><br><hr><br>
+
+<div class="m-4 grid grid-flow-col-dense grid-cols-3 grid-rows-3 gap-4 content-center">
+  <div class="blue-box col-span-4">01</div>
+  <div class="blue-box row-span-2">02</div>
+  <div class="blue-box col-span-2 row-span-2">03</div>
+  <div class="blue-box">04</div>
+  <div class="blue-box">05</div>
+</div>
+<hr />
+<h2>auto-cols-{syntax} | grid-flow-col</h2>
+<div class="grid auto-cols-fr grid-flow-col gap-2">
+  <div class="blue-box">01</div>
+  <div class="blue-box">02</div>
+  <div class="blue-box">03</div>
+  <div class="blue-box">04</div>
+  <div class="blue-box">05</div>
+</div><br>
+<hr /><br>
+
+<h2></h2>
+<div class="grid gap-2 grid-cols-3 h-screen place-items-start">
+  <div class="blue-box">01</div>
+  <div class="blue-box">02</div>
+  <div class="blue-box">03</div>
 </div>
 
 </body>
@@ -61,4 +86,5 @@
 
 <!--
 https://play.tailwindcss.com/yY4OxhRQo9
+https://play.tailwindcss.com/Ix84VZX6HT
 -->

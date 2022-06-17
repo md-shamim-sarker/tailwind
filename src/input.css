@@ -3,13 +3,28 @@
 @tailwind utilities;
 
 @layer components {
-    .box {
-      @apply
-      p-4
-      text-center
-      rounded-lg
-      bg-blue-600
-      text-white;
-    }
+  .blue-box {
+    @apply bg-blue-700 p-6 font-bold text-white w-16 h-16;
   }
-  
+  .red-box{
+    @apply bg-red-700 p-6 font-bold text-white w-16 h-16;
+  }
+  .green-box {
+    @apply bg-green-700 p-6 font-bold text-white w-16 h-16;
+  }
+  .black-box{
+    @apply bg-black p-6 font-bold text-white w-16 h-16;
+  }
+}
+
+@layer base {
+  h2 {
+    @apply text-center text-lg font-bold;
+  }
+}
+
+@layer utilities {
+  .bg-blue-700 {
+    background-color: rgb(62, 62, 155);
+  }
+}
