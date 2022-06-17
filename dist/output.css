@@ -629,6 +629,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column-end: 7;
 }
 
+.col-end-5 {
+  grid-column-end: 5;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-span-full {
+  grid-row: 1 / -1;
+}
+
 .float-right {
   float: right;
 }
@@ -667,6 +683,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .m-14 {
   margin: 3.5rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -824,6 +844,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-64 {
   height: 16rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -1049,6 +1073,10 @@ Ensure the default browser behavior of the `hidden` attribute.
        columns: 20rem;
 }
 
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1159,6 +1187,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-x-5 {
@@ -2078,6 +2110,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: sticky;
   }
 
+  .md\:col-span-full {
+    grid-column: 1 / -1;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:row-span-3 {
+    grid-row: span 3 / span 3;
+  }
+
+  .md\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .md\:row-span-4 {
+    grid-row: span 4 / span 4;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
   }
@@ -2085,6 +2137,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:columns-3 {
     -moz-columns: 3;
          columns: 3;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
   .md\:flex-row {
