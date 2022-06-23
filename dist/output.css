@@ -1058,6 +1058,10 @@ h2 {
   width: 2.25rem;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2242,6 +2246,21 @@ h2 {
 
 .shadow-white {
   --tw-shadow-color: #fff;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-yellow-500 {
+  --tw-shadow-color: #eab308;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-yellow-300 {
+  --tw-shadow-color: #fde047;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-yellow-100 {
+  --tw-shadow-color: #fef9c3;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
