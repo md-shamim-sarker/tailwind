@@ -32,7 +32,7 @@ Install Tailwind CSS project using Node.js and VS Code Editor.
 - Open project folder through VS Code (File/Open Folder.../)
 - Create folder named (.vscode, dist and src) in project root folder
 - Create settings.json inside .vscode folder and copy this script
-```bash
+```json
 {
     "css.validate": false,
     "tailwindCSS.emmetCompletions": true
@@ -46,19 +46,24 @@ Install Tailwind CSS project using Node.js and VS Code Editor.
 @tailwind utilities;
 ```
 - Create index.html file in project root folder and copy this boiler plate
-```bash
+```html
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Title</title>
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
 </body>
+
 </html>
 ```
 - Go to Terminal and initialize npm to generate package.json
@@ -76,7 +81,7 @@ npx tailwindcss init
 ```
 - After run this two command, node_modules folder, package-lock.json and tailwind.config.js are generated
 - Modify tailwind.config.js file like this
-```bash
+```js
 module.exports = {
   content: ["*.*.html"],
   theme: {
@@ -96,7 +101,7 @@ npm run build
 npm install @tailwindcss/aspect-ratio
 ```
 ## Modify tailwind.config.js file like this
-```bash
+```js
 module.exports = {
   content: ["*/*.html"],
   theme: {
